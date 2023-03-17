@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(5, 5, 44);
+  color: aliceblue;
+}
+
+
+h1 {
+  padding: .5em 1em;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+  color: grey;
+}
+
+
+@media screen and (max-width: 189px) and (max-height: 482px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;  
+  text-align: center;
+}
+
+
+#btnSave{
+border-radius: 3px; 
+padding: 8px 10px; 
+background-color: #A0C1F2; 
+border: 1px solid #2E5AAC; 
+box-shadow: 0px 0px 3px 1px #B3D3EF;
+}
+
+#btn{
+border-radius: 3px; 
+padding: 8px 10px; 
+background-color: #a9b7cd; 
+border: 1px solid #333436; 
+box-shadow: 0px 0px 3px 1px #a3b8cb;
+}
+
+.form-group {
+  display:flex;
+  gap: 1em;
+  margin: 10px;
+  padding: 10px;
+}
+
+/*Estilizando a tabela de pessoas*/
+
+#tblList thead{
+  background: gray;
+  color: #FFF;
+  width:100%;
+}
+

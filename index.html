@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulário</title>
+  </head>
+
+  <body>
+    <!--Cabeçalho-->
+    <div class="page-header">
+      <h1>Checkpoint 01</h1>
+    </div>
+
+    <!--Formulário de entrada de dados-->
+
+    <div class="container">
+      <form
+        id="frmPerson"
+        class="form-horizontal"
+        onsubmit="enviarDados()"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="txtName" class="col-sm-2 control-label">Título</label>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              id="titulo"
+              class="form-control"
+              placeholder="Título"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="txtName" class="col-lg-2 control-label">Descrição</label>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              id="descricao"
+              class="form-control"
+              placeholder="Descrição"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="txtName" class="col-lg-2 control-label"
+            >Url da imagem</label
+          >
+
+          <div class="col-sm-4">
+            <input
+              type="text"
+              id="urlDaImagem"
+              class="form-control"
+              placeholder="Url da Imagem"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="txtName" class="col-lg-2 control"></label>
+
+          <div class="Button">
+            <input
+              type="submit"
+              value="Submitir"
+              id="btnSave"
+              class="btn btn-success"
+            />
+            <input
+              type="button"
+              value="Cancelar"
+              id="btn"
+              onclick="cancelar()"
+              class="btn btn-danger"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--Tabela com a lista de dados-->
+    <div class="container">
+      <table id="tblList" class="table table-bordered"></table>
+    </div>
+
+    <!--Rodapé-->
+
+    <div id="footer">
+      <div>
+        <p class="text-muted credit">
+          Karen Denich de Angelis Rosa, Robson da Silva Santos e Tomás Pedro
+          Machado Ott
+        </p>
+      </div>
+    </div>
+
+    <script src="atribuicao.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </body>
+</html>
